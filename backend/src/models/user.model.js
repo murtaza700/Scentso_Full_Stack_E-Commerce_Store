@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: [true, 'Email is required!'],
-        unqiue: [true, 'Please Enter Another Email!'],
+        unique: [true, 'Please Enter Another Email!'],
         lowercase: true,
         trim: true
     },
